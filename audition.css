@@ -1,29 +1,6 @@
 @charset "utf-8";
-
-body {
-  font-family: var(--kor-font);
-  line-height: var(--title-line-height);
-}
-h1 {
-  font-size: var(--h1-font-size);
-}
-h2 {
-  font-size: var(--h2-font-size);
-}
-h3 {
-  font-size: var(--h3-font-size);
-}
-h4 {
-  font-size: var(--h4-font-size);
-}
-h5 {
-  font-size: var(--h5-font-size);
-}
-p {
-  font-size: var(--p-font-size);
-}
-.block{
-  display: block;
+.basic {
+  background-color: var(--light-bg-color);
 }
 
 /***** first-page *****/
@@ -36,10 +13,89 @@ main .first-page-container {
   border-radius: 0 0 80px 80px;
   transition: 2s;
 }
+/* img */
 main .first-page-container .img-wrapper{
-  position: absolute;
   z-index: 999;
   width: 100%;
   height: 100%;
   top: 0;
 }
+
+main .first-page-container .txt-wrapper{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--kor-font);
+}
+
+main .first-page-container .txt-wrapper h2{
+  font-weight: 900;
+  color: #fff;
+  font-size: var(--h1-font-size);
+}
+
+main .first-page-container .img-wrapper img{
+  transform: translateY(-63%);
+  object-fit: cover;
+}
+
+/***** second-page *****/
+
+main .second-page-container {
+  position: relative;
+  background-color: #fff;
+  padding: var(--page-padding);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 80px 80px;
+}
+main .second-page-container .txt-wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+}
+main .second-page-container .txt-wrapper p {
+  font-weight: 300;
+  display: block;
+  height: 10%;
+}
+main .second-page-container .txt-wrapper .block {
+  height: 30px;
+}
+main .second-page-container .txt-wrapper h3 {
+  font-family: var(--eng-font);
+  height: 160px;
+}
+
+main .second-page-container .second-img-wrapper {
+  overflow: hidden;
+  width: 580px;
+  height: 580px;
+  border-radius: 400px 0 40px 0;
+  background-color: #ddd;
+  position: relative;
+}
+main .second-page-container .second-img-wrapper img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  object-fit: cover;
+  transform: translate(-50%,-0%) scale(110%);
+}
+
+/***** third-page *****/
+main .third-page-container {
+  margin-top: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  background-color: var(--light-bg-color);
+}
+
