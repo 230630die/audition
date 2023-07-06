@@ -23,10 +23,11 @@ main .first-page-container .img-wrapper{
 
 main .first-page-container .txt-wrapper{
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,0%);
   font-family: var(--kor-font);
+  transition: 2s;
 }
 
 main .first-page-container .txt-wrapper h2{
@@ -71,6 +72,7 @@ main .second-page-container .txt-wrapper .block {
 main .second-page-container .txt-wrapper h3 {
   font-family: var(--eng-font);
   height: 160px;
+  font-weight: 900;
 }
 
 main .second-page-container .second-img-wrapper {
@@ -95,7 +97,412 @@ main .third-page-container {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 150vh;
+  height: 110vh;
   background-color: var(--light-bg-color);
 }
 
+.third-page-container .third-page-txt{
+  padding: var(--page-padding);
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+
+.third-page-container .third-page-txt ul li{
+  width: 500px;
+  display: flex;
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.third-page-container .third-page-txt ul li p{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.third-page-container .third-page-txt h2{
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+}
+
+.third-page-container .third-page-wrapper{
+  width: 1500px;
+  height: 650px;
+  background-color: #Fff;
+  border-radius: 40px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.third-page-container .third-page-wrapper .wrapper-inner{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 4vw;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 520px;
+  justify-content: center;
+}
+
+.third-page-container .third-page-wrapper img{
+  object-fit: cover;
+  width: 520px;
+  height: 520px;
+  position: absolute;
+  right: 4vw;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-mask-image: url(./audition-imgaes/shape.svg);
+  -webkit-mask-size: 500px;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.third-page-container .third-page-wrapper h4{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 900;
+  font-size: var(--h4-font-size);
+  margin-bottom: 40px;
+}
+
+.third-page-container .third-page-wrapper p{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  font-size: var(--p-font-size);
+  margin-bottom: 50px;
+  line-height: 130%;
+}
+
+.third-page-container .third-page-wrapper span{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 19px 0;
+}
+
+.third-page-container .third-page-wrapper span strong{
+  font-weight: 900;
+}
+
+.third-page-container .third-page-wrapper .button{
+  color: var(--white-color);
+  background-color: var(--black-color);
+  width: 170px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 40px;
+
+  position: absolute;
+  left: 4vw;
+  bottom: 10%;
+}
+
+/***** 애니메이션 *****/
+.third-page-txt.active{
+
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform: translate3d();
+  }
+}
+
+
+
+
+
+
+
+
+
+/***** footer *****/
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 60vh;
+  border-top: 1px solid #000;
+  position: relative;
+  background-color: var(--light-bg-color);
+}
+.footer-container img {
+  width: 304px;
+  height: 70px;
+  margin-left: 150px;
+}
+.footer-container .footer-wrapper {
+  display: flex;
+  margin-top: 100px;
+}
+.footer-container .footer-wrapper h6 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.footer-container .footer-wrapper p {
+  margin: 20px 0;
+}
+.footer-container .footer-wrapper .box {
+  margin-left: 100px;
+}
+.footer-container .footer-wrapper .footer-inner:nth-child(5) {
+  position: absolute;
+  right: 200px;
+  text-align: center;
+}
+.footer-container .footer-wrapper .footer-inner:nth-child(5) p {
+  background-color: #dddddd;
+  padding: 5px 20px;
+  border-radius: 40px;
+  border: 1px solid #000;
+}
+
+
+
+
+/***** 메뉴 나타내기 *****/
+/* .menu-page{
+  position: fixed;
+  z-index: 98;
+}
+.menu-page::after, .menu-page::before{
+  content: "";
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(28, 59, 212, 0.6);
+	border-bottom-left-radius: 200%;
+	z-index: -1;
+	-webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	-webkit-transform: translateX(100%) translateY(-100%);
+          transform: translateX(100%) translateY(-100%);
+}
+.menu-page::after {
+	background: rgba(28, 59, 212, 0.6);
+	-webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.menu-page::before {
+	-webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+.menu-content{
+  position: fixed;
+  visibility: hidden;
+  top: 50%;
+  margin-top: 20px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.menu-list{
+  position: relative;
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+}
+.menu-list-item{
+  position: relative;
+	display: block;
+	-webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+	opacity: 0;
+	text-align: center;
+	color: #fff;
+	overflow: hidden; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8vh;
+	font-weight: 900;
+	line-height: 1.15;
+	letter-spacing: 3px;
+	-webkit-transform: translate(100px, 0%);
+          transform: translate(100px, 0%);
+	-webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
+	transition: opacity .2s ease, -webkit-transform .3s ease;
+	transition: opacity .2s ease, transform .3s ease;
+	transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.menu-list-item a{
+  position: relative;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.6);
+	overflow: hidden; 
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: 900;
+	z-index: 2;
+	display: inline-block;
+	text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+body.active-menu .menu-content {
+	visibility: visible;
+}
+body.active-menu .menu-page {
+	visibility: visible;
+}
+body.active-menu .menu-list-item {
+	opacity: 1;
+	-webkit-transform: translateX(0%);
+          transform: translateX(0%);
+	-webkit-transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
+	transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
+	transition: opacity .3s ease, transform .3s ease, color .3s ease;
+	transition: opacity .3s ease, transform .3s ease, color .3s ease, -webkit-transform .3s ease;
+} */
+
+.menu-page {
+	position: fixed;
+	z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+.menu-page:before, .menu-page:after {
+	content: "";
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 31, 189, 0.6);
+	border-bottom-left-radius: 200%;
+	z-index: -1;
+	-webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+	-webkit-transform: translateX(100%) translateY(-100%);
+          transform: translateX(100%) translateY(-100%);
+}
+.menu-page:after {
+	background: rgba(9,9,12,1);
+	-webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.menu-page:before {
+	-webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+.menu-content {
+  overflow: hidden;
+  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--light-bg-color);
+	position: fixed;
+	visibility: hidden;
+	top: 50%;
+	/* margin-top: 20px; */
+	-webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+	width: 100%;
+	text-align: center;
+  
+}
+.menu-list {
+	position: relative;
+	padding: 0;
+	margin: 0;
+  margin-top: 200px;
+	z-index: 2;
+}
+.menu-list-item {
+	position: relative;
+	display: block;
+	-webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+	opacity: 0;
+	text-align: center;
+	color: #fff;
+	overflow: hidden; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8vh;
+	font-weight: 900;
+	line-height: 1.15;
+	letter-spacing: 3px;
+	-webkit-transform: translate(100px, 0%);
+          transform: translate(100px, 0%);
+	-webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
+	transition: opacity .2s ease, -webkit-transform .3s ease;
+	transition: opacity .2s ease, transform .3s ease;
+	transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.menu-list-item a{ 
+	position: relative;
+	text-decoration: none;
+	color: rgb(0,0,0);
+	overflow: hidden; 
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: 900;
+	z-index: 2;
+	display: inline-block;
+	text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear; 
+}
+.menu-list-item a:after{ 
+}
+.menu-list-item a:hover:after{ 
+}
+.menu-list-item.active-menu a:after{ 
+	height: 4px;
+	opacity: 1;
+	left: 0;
+	width: 100%;
+}
+body.menu-active .menu-content {
+	visibility: visible;
+}
+body.menu-active .menu-page {
+	visibility: visible;
+}
+body.menu-active .logo{
+  opacity: 0;
+}
+body.menu-active .menu-page:before, body.menu-active .menu-page:after {
+	-webkit-transform: translateX(0%) translateY(0%);
+          transform: translateX(0%) translateY(0%);
+	border-radius: 0;
+}
+body.menu-active .nav-page:after {
+	-webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+body.menu-active .menu-page:before {
+	-webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+body.menu-active .menu-list-item {
+	opacity: 1;
+	-webkit-transform: translateX(0%);
+          transform: translateX(0%);
+	-webkit-transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
+	transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
+	transition: opacity .3s ease, transform .3s ease, color .3s ease;
+	transition: opacity .3s ease, transform .3s ease, color .3s ease, -webkit-transform .3s ease;
+}
+
+
+.logo.none{
+  opacity: 0;
+}
