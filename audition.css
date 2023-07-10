@@ -181,7 +181,7 @@ main .third-page-container {
   right: 4vw;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-mask-image: url(./audition-imgaes/shape.svg);
+  -webkit-mask-image: url(./images/shape.svg);
   -webkit-mask-size: 500px;
   -webkit-mask-repeat: no-repeat;
 }
