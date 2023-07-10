@@ -136,6 +136,15 @@ main .third-page-container {
   font-size: 24px;
 }
 
+.third-page-container .third-page-txt ul .third-sub{
+  /* display:none; */
+  margin: 20px 0;
+  height:100px;
+  overflow:hidden;
+  border-bottom:3px #000 solid;
+  line-height: 80px;
+}
+
 .third-page-container .third-page-txt h2{
   font-family: 'DM Sans', sans-serif;
   font-size: var(--h2-font-size);
