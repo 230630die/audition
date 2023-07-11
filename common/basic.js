@@ -1,4 +1,4 @@
-const spo = document.querySelector("main .second-page-container").offsetTop;
+const spo = document.querySelector(".second-page-container").offsetTop;
 const footer = document.querySelector('footer');
 
 const Navscrolled = () => {
